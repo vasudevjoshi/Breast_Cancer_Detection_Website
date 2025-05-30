@@ -54,7 +54,7 @@ const ChatbotSupport = () => {
           </div>
         ))}
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 flex-wrap">
         <button
           onClick={() => handleUserInput("I just got diagnosed")}
           className="text-sm bg-pink-100 text-pink-700 px-3 py-1 rounded"
@@ -154,14 +154,14 @@ export default function Home() {
 
       {/* Hero Section */}
       <motion.section
-        className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative"
+        className="min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6 relative"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
         <RibbonAnimation />
         <motion.h1
-          className="text-5xl font-bold mb-4 bg-clip-text text-transparent animate-gradient"
+          className="text-4xl sm:text-5xl font-bold mb-4 bg-clip-text text-transparent animate-gradient"
           style={{
             backgroundImage:
               "linear-gradient(90deg, #f43f5e 0%, #ec4899 25%, #a21caf 50%, #ec4899 75%, #f43f5e 100%)",
@@ -177,7 +177,7 @@ export default function Home() {
           Early Detection Saves Lives
         </motion.h1>
         <motion.p
-          className="text-lg text-gray-600 max-w-xl mb-6"
+          className="text-base sm:text-lg text-gray-600 max-w-xl mb-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
@@ -191,31 +191,32 @@ export default function Home() {
           transition={{ delay: 0.4, duration: 0.5 }}
         >
           <Link
-  to="/awareness"
-  className="px-6 py-3 rounded-full shadow font-semibold transition bg-gradient-to-r from-pink-500 via-pink-400 to-purple-500 text-white hover:brightness-110"
-  style={{
-    backgroundImage: "linear-gradient(90deg, #f43f5e 0%, #ec4899 25%, #a21caf 100%)"
-  }}
->
-  Learn More
-</Link>
+            to="/awareness"
+            className="px-6 py-3 rounded-full shadow font-semibold transition bg-gradient-to-r from-pink-500 via-pink-400 to-purple-500 text-white hover:brightness-110"
+            style={{
+              backgroundImage:
+                "linear-gradient(90deg, #f43f5e 0%, #ec4899 25%, #a21caf 100%)",
+            }}
+          >
+            Learn More
+          </Link>
         </motion.div>
       </motion.section>
 
       {/* About Section */}
       <motion.section
         id="about"
-        className="py-20 px-6 text-center bg-pink-50/80 backdrop-blur-sm relative"
+        className="py-20 px-4 sm:px-6 text-center bg-pink-50/80 backdrop-blur-sm relative"
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
         <RibbonAnimation />
-        <h2 className="text-4xl font-semibold text-pink-600 mb-4">
+        <h2 className="text-3xl sm:text-4xl font-semibold text-pink-600 mb-4">
           About This Project
         </h2>
-        <p className="max-w-3xl mx-auto text-lg text-gray-700">
+        <p className="max-w-3xl mx-auto text-base sm:text-lg text-gray-700">
           Our mission is to create awareness about breast cancer and provide a
           free online tool for early prediction using AI. Empower yourself with
           knowledge and take steps to protect your health.
@@ -223,22 +224,22 @@ export default function Home() {
       </motion.section>
 
       <motion.section
-        className="py-20 px-6 text-center"
+        className="py-20 px-4 sm:px-6 text-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl font-bold text-pink-700 mb-4">
+        <h2 className="text-2xl sm:text-3xl font-bold text-pink-700 mb-4">
           Ready to Take a Step?
         </h2>
-        <p className="text-gray-600 mb-6">
+        <p className="text-gray-600 mb-6 text-base sm:text-lg">
           Explore symptoms or Steps to protect your health.
         </p>
-        <div className="flex justify-center gap-6">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
           <a
             href="https://68394acc51d080153ed68bf3--breastcare.netlify.app/symptoms"
-            className="bg-white border-2 border-pink-500 text-pink-600 px-6 py-3 rounded-full hover:bg-pink-100 transition"
+            className="bg-white border-2 border-pink-500 text-pink-600 px-6 py-3 rounded-full hover:bg-pink-100 transition mb-3 sm:mb-0"
           >
             View Symptoms
           </a>

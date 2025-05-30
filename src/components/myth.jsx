@@ -31,9 +31,9 @@ const mythTruthPairs = [
 
 export default function MythVsTruthSection() {
   return (
-    <section className="py-20 px-4 md:px-10">
+    <section className="py-20 px-2 sm:px-4 md:px-10">
       <motion.h2
-        className="text-4xl font-bold text-pink-600 mb-6 text-center"
+        className="text-3xl sm:text-4xl font-bold text-pink-600 mb-6 text-center"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ 
@@ -45,7 +45,7 @@ export default function MythVsTruthSection() {
       </motion.h2>
 
       <motion.p
-        className="text-gray-600 max-w-2xl mx-auto text-center mb-12"
+        className="text-gray-600 max-w-2xl mx-auto text-center mb-12 text-base sm:text-lg"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ 
@@ -57,11 +57,11 @@ export default function MythVsTruthSection() {
         Flip the cards to uncover the truth and break common misconceptions about breast cancer.
       </motion.p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 justify-center">
         {mythTruthPairs.map((item, index) => (
           <motion.div
             key={index}
-            className="flip-card w-80 h-60 mx-auto"
+            className="flip-card w-full max-w-xs sm:max-w-sm md:max-w-md h-60 mx-auto"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ 
@@ -84,29 +84,29 @@ export default function MythVsTruthSection() {
               }}
             >
               <div className="flip-front bg-gradient-to-br from-white to-pink-50">
-                <div className="text-center p-6">
+                <div className="text-center p-4 sm:p-6">
                   <motion.h3 
-                    className="text-xl font-semibold mb-4 text-pink-600"
+                    className="text-lg sm:text-xl font-semibold mb-4 text-pink-600"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3 }}
                   >
                     Myth
                   </motion.h3>
-                  <p className="text-gray-700 leading-relaxed">{item.myth}</p>
+                  <p className="text-gray-700 leading-relaxed text-sm sm:text-base">{item.myth}</p>
                 </div>
               </div>
               <div className="flip-back bg-gradient-to-br from-pink-50 to-white">
-                <div className="text-center p-6">
+                <div className="text-center p-4 sm:p-6">
                   <motion.h3 
-                    className="text-xl font-semibold mb-4 text-green-600"
+                    className="text-lg sm:text-xl font-semibold mb-4 text-green-600"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.3 }}
                   >
                     Truth
                   </motion.h3>
-                  <p className="text-gray-700 leading-relaxed">{item.truth}</p>
+                  <p className="text-gray-700 leading-relaxed text-sm sm:text-base">{item.truth}</p>
                 </div>
               </div>
             </motion.div>
