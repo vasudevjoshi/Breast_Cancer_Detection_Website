@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Salad, Wine, Users, Calendar, Activity, HeartPulse, Weight,MessageCircleHeart } from "lucide-react";
+import { Salad, Wine, Users, Calendar, Activity, HeartPulse, Weight} from "lucide-react";
 
 const riskData = {
   nonModifiable: [
