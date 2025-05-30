@@ -237,13 +237,13 @@ export default function Home() {
         </p>
         <div className="flex justify-center gap-6">
           <a
-            href="/symptoms"
+            href="https://68394acc51d080153ed68bf3--breastcare.netlify.app/symptoms"
             className="bg-white border-2 border-pink-500 text-pink-600 px-6 py-3 rounded-full hover:bg-pink-100 transition"
           >
             View Symptoms
           </a>
           <a
-            href="/awareness"
+            href="https://68394acc51d080153ed68bf3--breastcare.netlify.app/awareness"
             className="bg-pink-500 text-white px-6 py-3 rounded-full hover:bg-pink-600 transition"
           >
             Awareness
