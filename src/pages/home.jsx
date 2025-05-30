@@ -237,19 +237,20 @@ export default function Home() {
           Explore symptoms or Steps to protect your health.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
-          <a
-            href="https://breastcare.netlify.app/symptoms"
+          <Link
+            to="/symptoms"
             className="bg-white border-2 border-pink-500 text-pink-600 px-6 py-3 rounded-full hover:bg-pink-100 transition mb-3 sm:mb-0"
           >
             View Symptoms
-          </a>
-          <a
-            href="https://breastcare.netlify.app/awareness"
+          </Link>
+          <Link
+            to="/awareness"
             className="bg-pink-500 text-white px-6 py-3 rounded-full hover:bg-pink-600 transition"
           >
             Awareness
-          </a>
+          </Link>
         </div>
+
       </motion.section>
 
       <ChatbotSupport />
