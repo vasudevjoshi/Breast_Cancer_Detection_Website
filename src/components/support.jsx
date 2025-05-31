@@ -71,8 +71,8 @@ export default function SupportResources() {
             Get inspired by real stories and connect with survivor groups to share experiences and strength.
           </p>
           <ul className="text-pink-700 list-disc list-inside space-y-1 text-sm sm:text-base">
-            <li><a href="https://pinkribbon.org/stories" target="_blank" rel="noreferrer">Pink Ribbon Stories</a></li>
-            <li><a href="https://www.breastcancer.org/community/personal-stories" target="_blank" rel="noreferrer">BreastCancer.org Stories</a></li>
+            <li><a href="https://www.nationalbreastcancer.org/breast-cancer-ribbon/" target="_blank" rel="noreferrer">Pink Ribbon Stories</a></li>
+            <li><a href="https://www.survivingbreastcancer.org/breast-cancer-stories?gad_source=1&gad_campaignid=10554593716&gbraid=0AAAAACT9FcqaFSYxSFne8OwVv6jrH0UR4&gclid=CjwKCAjwruXBBhArEiwACBRtHX4GZAufCallF702LY2uSoogC9r_qGhL39DVJAvlmvuu8s9VaMyfqBoCcW4QAvD_BwE" target="_blank" rel="noreferrer">BreastCancer.org Stories</a></li>
           </ul>
         </div>
       </div>

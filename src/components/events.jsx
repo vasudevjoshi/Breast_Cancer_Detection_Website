@@ -8,7 +8,7 @@ const campaigns = [
     description:
       "Join millions worldwide to spread awareness about breast cancer prevention, early detection, and support for survivors.",
     icon: Megaphone,
-    link: "https://www.breastcancer.org/understand/what_is_bc/awareness_month",
+    link: "https://www.breastcancer.org/about-breast-cancer/breast-cancer-awareness-month",
   },
   {
     title: "Annual Walkathon for a Cure",
@@ -87,7 +87,7 @@ export default function CampaignsEvents() {
             )}
             {title === "Breast Cancer Awareness Month" && (
               <a
-                href="https://www.breastcancer.org/understand/what_is_bc/awareness_month"
+                href="https://www.breastcancer.org/about-breast-cancer/breast-cancer-awareness-month"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-auto self-start text-pink-700 font-semibold underline"
